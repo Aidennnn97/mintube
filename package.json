@@ -1,0 +1,22 @@
+{
+  "name": "mintube",
+  "version": "1.0.0",
+  "description": "mintube",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aidennnn97/mintube.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "MinStar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aidennnn97/mintube/issues"
+  },
+  "homepage": "https://github.com/Aidennnn97/mintube#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
