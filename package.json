@@ -8,7 +8,7 @@
     "url": "git+https://github.com/Aidennnn97/mintube.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon --exec babel-node index.js"
   },
   "author": "MinStar",
   "license": "ISC",
@@ -18,5 +18,11 @@
   "homepage": "https://github.com/Aidennnn97/mintube#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "nodemon": "^2.0.19"
   }
 }
