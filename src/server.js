@@ -8,13 +8,13 @@ const handleListening = () => console.log(`✅ Server listening on port http://l
 app.listen(PORT, handleListening);
 
 const handleHome = (req, res) => {
-    return res.end("<h1>This is Home</h1>");
+    return res.send("<h1>This is Home</h1>");
 }
 
 app.get("/", handleHome);
 
 const handleLogin = (req, res) => {
-    return res.end("<h1>This is Login</h1>");
+    return res.send({ message: "This is Login" });
 }
 
 app.get("/login", handleLogin);

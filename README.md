@@ -10,7 +10,8 @@
  - HTTP: 서버와 소통하는 방법, GET
  -  request, response
  -  app.get("route", callback(req, res))
- -  res.end() : request를 종료
+ -  res.end(): request를 종료
+ -  res.send()
  -  https://expressjs.com/ko/4x/api.html
 
 # 0829
