@@ -1,6 +1,18 @@
 # mintube
  mintube :)
 
+# 0830
+
+ - import express or require("express")
+ - create express application using express function
+ - server: listen interactive things
+ - app.listen(port, callback()): 서버 시작시 작동
+ - HTTP: 서버와 소통하는 방법, GET
+ -  request, response
+ -  app.get("route", callback(req, res))
+ -  res.end() : request를 종료
+ -  https://expressjs.com/ko/4x/api.html
+
 # 0829
 
  - Babel: 자바스크립트 컴파일러로 최신 자바스크립트를 컴파일 해준다
