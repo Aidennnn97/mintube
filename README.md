@@ -8,6 +8,7 @@
  - next() : 다음 함수를 호출해 준다.
  - app.use(middleware) 순서가 중요하다 middleware를 먼저 use하고 그 다음 url을 get
 
+
 # 0830
 
  - import express or require("express")
@@ -37,3 +38,4 @@
 
  - npm init (package.json)
  - npm i express
+ - package.json: node.js 관련 정보를 담는 곳
