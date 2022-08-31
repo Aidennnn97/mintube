@@ -6,7 +6,7 @@
  - middleware: request와 response사이의 controller
  - (req, res, next)
  - next() : 다음 함수를 호출해 준다.
- - app.use(middleware) 순서가 중요하다 middleware를 먼저 use하고 그 다음 url을 get
+ - app.use(middleware) 순서가 중요하다 middleware를 먼저 use하고 그 다음 url을 get, middleware를 global하게 쓰기위해 맨위에 두어야한다.
 
 
 # 0830

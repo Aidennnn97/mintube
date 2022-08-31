@@ -7,8 +7,25 @@ const PORT = 4000;
 const handleListening = () => console.log(`✅ Server listening on port http://localhost:${PORT} 🚀`)
 app.listen(PORT, handleListening);
 
+// MiddleWare Logger
 const urlLogger = (req, res, next) => {
     console.log(`${req.method} ${req.url}`);
+    next();
+}
+
+const timeLogger = (req, res, next) => {
+    var date = new Date();
+    console.log(`Request Time: ${date}`);
+    next();
+}
+
+const securityLogger = (req, res, next) => {
+    const protocol = req.protocol;
+    if(protocol === 'https'){
+        console.log('Secure!');
+    } else {
+        console.log('Insecure!');
+    }
     next();
 }
 
@@ -21,6 +38,7 @@ const protectorMiddleware = (req, res, next) => {
     next();
 }
 
+// GET URL
 const handleHome = (req, res) => {
     return res.send("<h1>This is Home</h1>");
 }
@@ -29,8 +47,8 @@ const handleProtected = (req, res) => {
     return res.send("Welcome to the private lounge.");
 }
 
-app.use(urlLogger);
-app.use(protectorMiddleware);
+//app.enable('trust proxy'); proxy서버일 때 https인식
+app.use(urlLogger, timeLogger, securityLogger, protectorMiddleware);
 app.get("/", handleHome);
 app.get("/protected", handleProtected);
 
