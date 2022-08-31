@@ -1,6 +1,13 @@
 # mintube
  mintube :)
 
+# 0831
+
+ - middleware: request와 response사이의 controller
+ - (req, res, next)
+ - next() : 다음 함수를 호출해 준다.
+ - app.use(middleware) 순서가 중요하다 middleware를 먼저 use하고 그 다음 url을 get
+
 # 0830
 
  - import express or require("express")
@@ -9,7 +16,7 @@
  - app.listen(port, callback()): 서버 시작시 작동
  - HTTP: 서버와 소통하는 방법, GET
  -  request, response
- -  app.get("route", callback(req, res))
+ -  app.get("route", callback(req, res)), callback함수는 여러개 사용 가능
  -  res.end(): request를 종료
  -  res.send()
  -  https://expressjs.com/ko/4x/api.html
