@@ -1,6 +1,12 @@
 # mintube
  mintube :)
 
+# 0901
+
+ - morgan: node.js용 request logger middleware
+ - npm i morgan
+ - morgan(""): middleware를 return
+
 # 0831
 
  - middleware: request와 response사이의 controller

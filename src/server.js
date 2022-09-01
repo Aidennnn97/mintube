@@ -1,4 +1,5 @@
 import express from "express";
+import morgan from "morgan";
 
 const app = express();
 
@@ -38,6 +39,8 @@ const protectorMiddleware = (req, res, next) => {
     next();
 }
 
+const logger = morgan("dev");
+
 // GET URL
 const handleHome = (req, res) => {
     return res.send("<h1>This is Home</h1>");
@@ -47,6 +50,7 @@ const handleProtected = (req, res) => {
     return res.send("Welcome to the private lounge.");
 }
 
+app.use(logger);
 //app.enable('trust proxy'); proxy서버일 때 https인식
 app.use(urlLogger, timeLogger, securityLogger, protectorMiddleware);
 app.get("/", handleHome);
