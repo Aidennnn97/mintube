@@ -2,7 +2,7 @@
  mintube :)
 
 # 0902
- - 라우터: 작업중인 주제를 기반으로 URL을 그룹화 해준다
+ - 라우터: URL 그룹화
  - express.Router();
  - GlobalRouter
  - / -> Home
@@ -20,6 +20,10 @@
  - /videos/delete -> Delete Video
  - /videos/comments -> Comment on a video
  - /videos/commnets/delete -> Delete A Comment of a Video
+
+ - export 먼저 하고 import
+ - 라우터 안에 라우트를 만들고 라우트마다 controller(함수)
+ - export(1개이상 공유, import할 때 어떤것을 가져올지 {}안에 구체적으로 지정), export default(1개만 공유)
 
 # 0901
 
