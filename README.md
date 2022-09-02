@@ -1,6 +1,26 @@
 # mintube
  mintube :)
 
+# 0902
+ - 라우터: 작업중인 주제를 기반으로 URL을 그룹화 해준다
+ - express.Router();
+ - GlobalRouter
+ - / -> Home
+ - /join -> Join
+ - /login -> Login
+ - /search -> Search
+ - 
+ - UserRouter
+ - /users/edit -> Edit user
+ - /users/delete -> Delete user
+ - 
+ - VideoRouter
+ - /videos/watch -> Watch Video
+ - /videos/edit -> Edit Video
+ - /videos/delete -> Delete Video
+ - /videos/comments -> Comment on a video
+ - /videos/commnets/delete -> Delete A Comment of a Video
+
 # 0901
 
  - morgan: node.js용 request logger middleware
