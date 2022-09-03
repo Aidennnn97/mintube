@@ -1,23 +1,36 @@
 # mintube
  mintube :)
 
+ # 0903
+ - URL Parameters: /:id(parameters), :id를 변수로 인식, parameters는 url안에 변수 넣는걸 허용
+ - router.get(); 할때 예를 들어 /upload가 /:id보다 아래에 있으면 upload를 변수 :id의 값으로 인식하여 upload를 못 불러옴, 하지만 Regular Expression으로 특정 문자만 올 수 있게 지정해 놓으면 상관없다
+ - express Routing: https://expressjs.com/ko/guide/routing.html
+ - Regular Expression: 문자열로부터 특정 정보를 추출해 내는 방법
+ - /(kim\w+)/ : kim으로 시작하는 모든 단어를 target, \w+ 는 kim다음에 아무 문자나 얼마든지 와도 된다는 뜻
+ - /(\d+)/ : \d+는 숫자(digit)만 올 수 있음
+ - router.get("/:id(\\d+)", callback()); : 자바스크립트기 때문에 \를 하나더 붙여준다
+
 # 0902
  - 라우터: URL 그룹화
  - express.Router();
+ - http://expressjs.com/ko/api.html#router
+ - 
  - GlobalRouter
  - / -> Home
  - /join -> Join
  - /login -> Login
  - /search -> Search
  - 
- - UserRouter
- - /users/edit -> Edit user
- - /users/delete -> Delete user
+ - UserRouters
+ - /users/:id -> See User
+ - /users/edit -> Edit User Profile
+ - /users/delete -> Delete User Profile
  - 
  - VideoRouter
- - /videos/watch -> Watch Video
- - /videos/edit -> Edit Video
- - /videos/delete -> Delete Video
+ - /videos/:id -> Watch Video
+ - /videos/:id/edit -> Edit Video
+ - /videos/:id/delete -> Delete Video
+ - /videos/upload -> Upload Video
  - /videos/comments -> Comment on a video
  - /videos/commnets/delete -> Delete A Comment of a Video
 
