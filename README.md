@@ -17,6 +17,8 @@
  - Template Inheritance: 상속은 일종의 베이스를 만들어준다(레이아웃, HTML의 베이스) 
  - extends layout.pug
  - block: 템플릿에 무언가를 집어 넣을 수 있는 곳
+ - MVP.css: HTML태그에 몇가지 기본 스타일들을 입혀준다
+ - https://andybrewer.github.io/mvp/
 
  # 0903
  - URL Parameters: /:id(parameters), :id를 변수로 인식, parameters는 url안에 변수 넣는걸 허용
