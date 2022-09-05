@@ -12,8 +12,10 @@ const handleListening = () => console.log(`✅ Server listening on port http://l
 app.listen(PORT, handleListening);
 
 const logger = morgan("dev");
-app.use(logger);
 
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
+app.use(logger);
 app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);

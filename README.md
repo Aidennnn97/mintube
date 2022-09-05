@@ -1,6 +1,23 @@
 # mintube
  mintube :)
 
+# 0905
+ - pug: HTML을 리턴해 주는 템플릿 엔진(템플릿을 이용해서 뷰를 만듬)
+ - npm i pug
+ - app.set("view engine", "pug");
+ - express는 html을 리턴하기 위해 pug를 사용, views디렉토리의 pug 파일을 알아서 찾아줌
+ - 기본적으로 express는 (current working directory) cwd/views에서 pug파일을 찾는다
+ - package.json에서 서버를 실행하고 있기 때문에 package.json이 있는 폴더가 cwd가 된다
+ - res.render("뷰이름", {템플릿에보낼변수}); 
+ - app.set("views", process.cwd() + "/src/views");
+ - pug에서 js사용법: #{}
+ - pugjs.org/language/inheritance.html
+ - partial
+ - include partials/footer.pug
+ - Template Inheritance: 상속은 일종의 베이스를 만들어준다(레이아웃, HTML의 베이스) 
+ - extends layout.pug
+ - block: 템플릿에 무언가를 집어 넣을 수 있는 곳
+
  # 0903
  - URL Parameters: /:id(parameters), :id를 변수로 인식, parameters는 url안에 변수 넣는걸 허용
  - router.get(); 할때 예를 들어 /upload가 /:id보다 아래에 있으면 upload를 변수 :id의 값으로 인식하여 upload를 못 불러옴, 하지만 Regular Expression으로 특정 문자만 올 수 있게 지정해 놓으면 상관없다
