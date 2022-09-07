@@ -1,6 +1,11 @@
 # mintube
  mintube :)
 
+# 0907
+- 태그에 하나의 variable 값만 집어넣는 경우 h1= 과 같이 사용
+- variable를 text와 섞게 된다면 #{variable} + text 처럼 사용
+- conditionals : https://pugjs.org/language/conditionals.html
+
 # 0905
  - pug: HTML을 리턴해 주는 템플릿 엔진(템플릿을 이용해서 뷰를 만듬)
  - npm i pug
