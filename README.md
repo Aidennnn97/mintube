@@ -4,7 +4,12 @@
 # 0907
 - 태그에 하나의 variable 값만 집어넣는 경우 h1= 과 같이 사용
 - variable를 text와 섞게 된다면 #{variable} + text 처럼 사용
-- conditionals : https://pugjs.org/language/conditionals.html
+- conditionals: if, else if, else
+- https://pugjs.org/language/conditionals.html
+- iteration : each v in array
+- https://pugjs.org/language/iteration.html
+- mixin: partial과 비슷한데 데이터를 받을 수 있는 일종의 미리 만들어진 HTML block이라 볼 수 있다.
+- partial은 include사용 mixin은 include로 mixin파일을 가져오고, + 로 mixin안의 function을 사용
 
 # 0905
  - pug: HTML을 리턴해 주는 템플릿 엔진(템플릿을 이용해서 뷰를 만듬)
