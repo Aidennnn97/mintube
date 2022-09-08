@@ -1,4 +1,7 @@
 extends layout
 
 block content 
-    h1 Edit Video!
+    h4 Change Title of video
+    form(action="")
+        input(type="text" placeholder="Video Title" value=video.title)
+        input(type="submit", value="Save")

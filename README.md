@@ -1,6 +1,10 @@
 # mintube
  mintube :)
 
+# 0908
+- &rarr; : 오른쪽 화살표
+- absolute url(/url), relative url(url)
+
 # 0907
 - 태그에 하나의 variable 값만 집어넣는 경우 h1= 과 같이 사용
 - variable를 text와 섞게 된다면 #{variable} + text 처럼 사용
