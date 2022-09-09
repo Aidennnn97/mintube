@@ -4,8 +4,13 @@
 # 0909
 - action="url" : 데이터들을 어디로 보낼지
 - method: default는 get, 검색할 때 검색어가 주소창에 포함되어 있음
-- input태그에 name을 지어주고 get요청을하면 url에 name에 대한 정보가 추가됨
+- input태그에 name을 지어주고 get요청을하면 url에 name에 대한 정보가 추가됨(input에 name을 안쓰면 데이터가 전송되지 않는다)
 - method="post" : 로그인 하거나, 파일을 보내거나 database에 있는 값을 바꾸는 뭔가를 보낼 때 사용
+- 하나의 url에 get, post방식 모두 쓰는 경우: videoRouter.route("/:id(\\d+)/edit").get(getEdit).post(postEdit);
+- express.urlencoded: form의 body를 이해 함
+- express.urlencoded(extended): body에 있는 정보들을 보기 좋게 형식을 갖춰줌
+- routes를 사용하기전에 middleware를 사용해야한다, middleware가 form을 이해하고, 자바스크립트로 변형시켜줘서 사용할 수 있게 된다
+- app.use(express.urlencoded({extended: true})); : express application이 form의 value를 이해할 수 있도록 하고, 자바스크립트 형식으로 변형시켜준다
 
 # 0908
 - &rarr; : 오른쪽 화살표
@@ -97,12 +102,12 @@
  - create express application using express function
  - server: listen interactive things
  - app.listen(port, callback()): 서버 시작시 작동
- - HTTP: 서버와 소통하는 방법, GET
- -  request, response
- -  app.get("route", callback(req, res)), callback함수는 여러개 사용 가능
- -  res.end(): request를 종료
- -  res.send()
- -  https://expressjs.com/ko/4x/api.html
+ - HTTP: 서버와 소통하는 방법, GET, POST
+ - request, response
+ - app.get("route", callback(req, res)), callback함수는 여러개 사용 가능
+ - res.end(): request를 종료
+ - res.send()
+ - https://expressjs.com/ko/4x/api.html
 
 # 0829
 
