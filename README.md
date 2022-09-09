@@ -1,6 +1,12 @@
 # mintube
  mintube :)
 
+# 0909
+- action="url" : 데이터들을 어디로 보낼지
+- method: default는 get, 검색할 때 검색어가 주소창에 포함되어 있음
+- input태그에 name을 지어주고 get요청을하면 url에 name에 대한 정보가 추가됨
+- method="post" : 로그인 하거나, 파일을 보내거나 database에 있는 값을 바꾸는 뭔가를 보낼 때 사용
+
 # 0908
 - &rarr; : 오른쪽 화살표
 - absolute url(/url), relative url(url)
@@ -12,7 +18,7 @@
 - https://pugjs.org/language/conditionals.html
 - iteration : each v in array
 - https://pugjs.org/language/iteration.html
-- mixin: partial과 비슷한데 데이터를 받을 수 있는 일종의 미리 만들어진 HTML block이라 볼 수 있다.
+- mixin: partial과 비슷한데 **데이터를 받을 수 있는** 일종의 미리 만들어진 HTML block이라 볼 수 있다.
 - partial은 include사용 mixin은 include로 mixin파일을 가져오고, + 로 mixin안의 function을 사용
 
 # 0905
