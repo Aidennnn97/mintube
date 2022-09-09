@@ -7,6 +7,7 @@
 - input태그에 name을 지어주고 get요청을하면 url에 name에 대한 정보가 추가됨(input에 name을 안쓰면 데이터가 전송되지 않는다)
 - method="post" : 로그인 하거나, 파일을 보내거나 database에 있는 값을 바꾸는 뭔가를 보낼 때 사용
 - 하나의 url에 get, post방식 모두 쓰는 경우: videoRouter.route("/:id(\\d+)/edit").get(getEdit).post(postEdit);
+- globalRouter.route("/").get(home);
 - express.urlencoded: form의 body를 이해 함
 - express.urlencoded(extended): body에 있는 정보들을 보기 좋게 형식을 갖춰줌
 - routes를 사용하기전에 middleware를 사용해야한다, middleware가 form을 이해하고, 자바스크립트로 변형시켜줘서 사용할 수 있게 된다
