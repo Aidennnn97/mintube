@@ -1,6 +1,11 @@
 # mintube
  mintube :)
 
+# 0912
+- Recap post, get
+- make a video upload page
+- 
+
 # 0909
 - action="url" : 데이터들을 어디로 보낼지
 - method: default는 get, 검색할 때 검색어가 주소창에 포함되어 있음
