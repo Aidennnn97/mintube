@@ -4,7 +4,14 @@
 # 0912
 - Recap post, get
 - make a video upload page
-- 
+- redirect
+- Mongo DB: general purpose, document-based database, JSON-like-document(objects)
+- https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+- mongoose: node와 mongoDB를 이어주는 다리
+- mongod, mongosh
+- server에 import dbfile
+- db.on: 여러번 발생가능 이벤트처럼
+- db.once: 한번만 발생
 
 # 0909
 - action="url" : 데이터들을 어디로 보낼지
