@@ -1,6 +1,14 @@
 # mintube
  mintube :)
 
+# 0913
+- CRUD(video model)
+- model의 형태를 정의해 줄 필요가 있다, 보통 schema라고 함
+- Schema: 물리적인 장치로부터 논리적인 데이터베이스 레코드를 매핑하는데 사용되는 정보. 즉, 쿠키틀 같은 것
+- init.js: 서버에 필요한 모든 것들을 import하는 역할을 담당
+- https://mongoosejs.com/docs/queries.html
+- Model.find({configuration}, callback): callback function을 활용하는방법, promise를 활용하는 방법
+
 # 0912
 - Recap post, get
 - make a video upload page
@@ -12,6 +20,8 @@
 - server에 import dbfile
 - db.on: 여러번 발생가능 이벤트처럼
 - db.once: 한번만 발생
+- brew services start mongodb-community@6.0
+- brew services stop mongodb-community@6.0
 
 # 0909
 - action="url" : 데이터들을 어디로 보낼지
