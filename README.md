@@ -1,6 +1,10 @@
 # mintube
  mintube :)
 
+# 0917
+- promise : callback의 최신버전 같은 느낌
+- await은 database로 부터 결과값을 받을 때 까지 기다림, asynchronous function안에서만 사용가능함
+
 # 0913
 - CRUD(video model)
 - model의 형태를 정의해 줄 필요가 있다, 보통 schema라고 함
