@@ -6,6 +6,10 @@
 - brew services stop mongodb-community@6.0
 - mongosh, show dbs, use db명, show collections, db.collection.find()
 
+# 0918
+- try, catch
+- {required: true, default: Date.now}
+
 # 0917
 - promise : callback의 최신버전 같은 느낌
 - await은 database로 부터 결과값을 받을 때 까지 기다림, asynchronous function안에서만 사용가능함
