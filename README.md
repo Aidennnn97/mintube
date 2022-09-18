@@ -9,6 +9,7 @@
 # 0918
 - try, catch
 - {required: true, default: Date.now}
+- mongooseSchemaType: https://mongoosejs.com/docs/schematypes.html
 
 # 0917
 - promise : callback의 최신버전 같은 느낌
