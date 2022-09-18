@@ -10,6 +10,9 @@
 - try, catch
 - {required: true, default: Date.now}
 - mongooseSchemaType: https://mongoosejs.com/docs/schematypes.html
+- 정규표현식: https://regexpal.com, https://www.mongodb.com/docs/manual/reference/method/ObjectId/
+- [0-9a-f]{24}
+- findById()
 
 # 0917
 - promise : callback의 최신버전 같은 느낌
