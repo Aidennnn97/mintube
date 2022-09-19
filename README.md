@@ -10,6 +10,9 @@
 - Edit Video Page
 - join(): array를 string으로 format
 - startsWith()
+- https://mongoosejs.com/docs/api/model.html
+- findByIdAndUpdate()
+- exist(filter)
 
 # 0918
 - try, catch
