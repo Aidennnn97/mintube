@@ -4,7 +4,12 @@
 # MongoDB
 - brew services start mongodb-community@6.0
 - brew services stop mongodb-community@6.0
-- mongosh, show dbs, use db명, show collections, db.collection.find()
+- mongosh, show dbs, use db명, show collections, db.collection.find()  
+
+# 0919
+- Edit Video Page
+- join(): array를 string으로 format
+- startsWith()
 
 # 0918
 - try, catch
