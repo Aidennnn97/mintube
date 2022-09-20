@@ -4,7 +4,16 @@
 # MongoDB
 - brew services start mongodb-community@6.0
 - brew services stop mongodb-community@6.0
-- mongosh, show dbs, use db명, show collections, db.collection.find()  
+- mongosh, show dbs, use dbName, show collections, db.collection.find(), db.collectionName.deleteMany({})
+
+# 0920
+- https://mongoosejs.com/docs/middleware.html
+- Middleware는 무조건 model이 생성되기 전에 만들어야 한다.
+- schema.pre('save', async function(){})
+- https://mongoosejs.com/docs/guide.html
+- Statics
+- schema.static('staticName', function({}))
+- Model.findByIdAndDelete()
 
 # 0919
 - Edit Video Page
