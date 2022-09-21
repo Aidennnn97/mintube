@@ -9,6 +9,7 @@
 # 0921
 - sort({})
 - video search
+- search regular Expression
 
 # 0920
 - https://mongoosejs.com/docs/middleware.html
