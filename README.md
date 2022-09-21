@@ -6,6 +6,10 @@
 - brew services stop mongodb-community@6.0
 - mongosh, show dbs, use dbName, show collections, db.collection.find(), db.collectionName.deleteMany({})
 
+# 0921
+- sort({})
+- video search
+
 # 0920
 - https://mongoosejs.com/docs/middleware.html
 - Middleware는 무조건 model이 생성되기 전에 만들어야 한다.

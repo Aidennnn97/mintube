@@ -10,7 +10,7 @@ import Video from '../models/Video';
 
 export const home = async(req, res) => {
     //promise
-    const videos = await Video.find({});
+    const videos = await Video.find({}).sort({createdAt: "desc"});
     console.log(videos);
     return res.render("home", {pageTitle:"Home", videos});
 };
@@ -87,3 +87,7 @@ export const deleteVideo = async(req, res) => {
     await Video.findByIdAndDelete(id);
     return res.redirect("/");
 };
+
+export const search = (req, res) => {
+    return res.render("search", {pageTitle:`Search`});
+}
