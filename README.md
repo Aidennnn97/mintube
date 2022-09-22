@@ -11,6 +11,7 @@
 - node_modules에서 express 찾아와 import 후 express application 생성, express()
 - server is listening user req, app.listen(portNo, callback())
 - HTTP: 유저와 서버가 소통하는 프로토콜(통신규약), GET, POST methods
+- 유저가 브라우저에서 브라우저가 유저를 대신 해 웹사이트를 request해서 페이지를 가져다 줌
 
 # 0921
 - sort({})
