@@ -6,6 +6,12 @@
 - brew services stop mongodb-community@6.0
 - mongosh, show dbs, use dbName, show collections, db.collection.find(), db.collectionName.deleteMany({})
 
+# 0922 복습
+- Node.js Express 서버 생성
+- node_modules에서 express 찾아와 import 후 express application 생성, express()
+- server is listening user req, app.listen(portNo, callback())
+- HTTP: 유저와 서버가 소통하는 프로토콜(통신규약), GET, POST methods
+
 # 0921
 - sort({})
 - video search
